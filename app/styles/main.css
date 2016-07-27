@@ -107,3 +107,6 @@ body .app-header {
   background-color: green;
   margin: 0 auto;
 }
+body .xcy-testSwiper .swiper-slide {
+  height: 300px;
+}
