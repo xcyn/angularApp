@@ -10,7 +10,6 @@
 angular.module('angularAppApp')
     .factory('xcyTextLbt', function () {
         // Service logic
-        // ...
 
         var meaningOfLife = 42;
 

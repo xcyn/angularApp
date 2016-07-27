@@ -110,3 +110,11 @@ body .app-header {
 body .xcy-testSwiper .swiper-slide {
   height: 300px;
 }
+body .abouts-style {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
