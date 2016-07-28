@@ -1,4 +1,4 @@
-//³õÊ¼»¯
+//åˆå§‹åŒ–
 @main-color: #B30900;
 @main-color-lighter: #D70C00;
 @grey-color: #939393;
@@ -80,9 +80,9 @@ html {
   *zoom: 1;
 }
 
-//Ö÷Ìåcss²¿·Ö
+//ä¸»ä½“csséƒ¨åˆ†
 body {
-  //Í·²¿²¿·Ö¿ªÊ¼
+  //å¤´éƒ¨éƒ¨åˆ†å¼€å§‹
   .app-header {
     width: 80%;
     height: 100px;
@@ -90,21 +90,48 @@ body {
     margin: 0 auto;
   }
 
-  //  Ö÷Òªswiper²¿·Ö
+  //  ä¸»è¦swiperéƒ¨åˆ†
   .xcy-testSwiper {
     .swiper-slide {
-      height: 300px;
+      height: 8rem;
     }
   }
 
-  //¹ØÓÚaboutsÏêÇéÒ³²¿·Ö
+  //å…³äºŽaboutsè¯¦æƒ…é¡µéƒ¨åˆ†
   .abouts-style {
-    width: 150px;
-    height: 150px;
-    line-height: 150px;
+    height: 3rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
     box-sizing: border-box;
     border: 1px solid black;
     text-align: center;
   }
+
+  //aboutListçš„è¯¦æƒ…é¡µé¢
+  .aboutList-content {
+    > div {
+      height: 3rem;
+      border: 1px solid black;
+    }
+  }
+
+  //xcy1tabæ æµ‹è¯•é¡µé¢
+  .xcy1-content {
+    li {
+      height: 1rem;
+      border: 1px solid black;
+    }
+    .xcy1-content-main {
+      > div {
+        height: 3rem;
+        border: 1px solid green;
+        display: none;
+      }
+      .active {
+        display: block;
+      }
+    }
+  }
+
 
 }

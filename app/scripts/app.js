@@ -44,11 +44,16 @@ angular
                 controller: 'FooterCtrl',
                 controllerAs: 'footer'
             })
+            .when('/aboutList', {
+              templateUrl: 'views/aboutlist.html',
+              controller: 'AboutlistCtrl',
+              controllerAs: 'aboutList'
+            })
             .otherwise({
                 redirectTo: '/'
             });
     }).run(function ($rootScope,$window) {
-        //·â×°µã»÷ÈÃÒ³ÃæÌø×ª
+        //ï¿½ï¿½×°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½×ª
         $rootScope.goto = function(url) {
             $window.location.href = url;
         };

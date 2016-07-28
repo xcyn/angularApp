@@ -108,13 +108,29 @@ body .app-header {
   margin: 0 auto;
 }
 body .xcy-testSwiper .swiper-slide {
-  height: 300px;
+  height: 8rem;
 }
 body .abouts-style {
-  width: 150px;
-  height: 150px;
-  line-height: 150px;
+  height: 3rem;
+  line-height: 3rem;
+  margin-bottom: 0.5rem;
   box-sizing: border-box;
   border: 1px solid black;
   text-align: center;
+}
+body .aboutList-content > div {
+  height: 3rem;
+  border: 1px solid black;
+}
+body .xcy1-content li {
+  height: 1rem;
+  border: 1px solid black;
+}
+body .xcy1-content .xcy1-content-main > div {
+  height: 3rem;
+  border: 1px solid green;
+  display: none;
+}
+body .xcy1-content .xcy1-content-main .active {
+  display: block;
 }

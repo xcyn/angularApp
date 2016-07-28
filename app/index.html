@@ -15,6 +15,25 @@
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- 引用rem布局 -->
+    <script>
+      (function (b, c) {
+        var d = b.documentElement,
+          resizeEvt = 'orientationchange' in c ? 'orientationchange' : 'resize',
+          recalc = function () {
+            var a = d.clientWidth;
+            if (!a) return;
+            d.style.fontSize = (20 * (a / 750)) > 100 ? 100 + "px" : (100 * (a / 750)) + 'px'
+          },
+          anime = c.requestAnimationFrame || c.webkitRequestAnimationFrame || c.mozRequestAnimationFrame || c.oRequestAnimationFrame ||
+            function (e) {
+              return setTimeout(e, 16.67)
+            };
+        if (!b.addEventListener) return;
+        c.addEventListener(resizeEvt, recalc, false);
+        b.addEventListener('DOMContentLoaded', recalc, false)
+      })(document, window);
+    </script>
   </head>
   <body ng-app="angularAppApp">
     <!--[if lte IE 8]>
@@ -66,6 +85,7 @@
         <script src="scripts/directives/footer.js"></script>
         <script src="scripts/controllers/footer.js"></script>
         <script src="scripts/services/xcytextlbt.js"></script>
+        <script src="scripts/controllers/aboutlist.js"></script>
         <!-- endbuild -->
 </body>
 </html>

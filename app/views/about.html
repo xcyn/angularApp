@@ -1,5 +1,7 @@
 <div ng-include="'views/header.html'"></div>
-<!--Ä£Äâ¼ÙÊý¾Ý´«½Ó-->
-<ul ng-repeat="abouts in aboutDatas" ng-click="goto('#/about?id='+ abouts.id)">
+<!--æ¨¡æ‹Ÿå‡æ•°æ®ä¼ æŽ¥-->
+<ul ng-repeat="abouts in aboutDatas" ng-click="goto('#/aboutList?id='+ abouts.id)">
     <li class="abouts-style">{{abouts.aboutContent}}</li>
 </ul>
+
+
