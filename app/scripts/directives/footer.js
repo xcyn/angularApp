@@ -9,7 +9,7 @@
 angular.module('angularAppApp')
   .directive('footer', function () {
     return {
-      templateUrl: 'views/footer.html',
+      templateUrl: '../../views/homepage/footer.html',
       restrict: 'E',
       link: function postLink(scope, element, attrs) {
 

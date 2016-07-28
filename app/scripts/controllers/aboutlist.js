@@ -15,11 +15,11 @@ angular.module('angularAppApp')
       'Karma'
     ];
     var id = $location.search().id;
-    $http.get("http://www.runoob.com/try/angularjs/data/Customers_JSON.php")
-      .success(function(response) {
-        //$scope.names = response.records;
-        console.log(response)
-      });
+    //$http.get("http://www.runoob.com/try/angularjs/data/Customers_JSON.php")
+    //  .success(function(response) {
+    //    //$scope.names = response.records;
+    //    console.log(response)
+    //  });
     var aboutList = {
       list_0:{
         content:$sce.trustAsHtml('<div>about的详细跳转页面1</div>')

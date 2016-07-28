@@ -30,7 +30,7 @@ angular
                 controllerAs: 'about'
             })
             .when('/header', {
-                templateUrl: 'views/header.html',
+                templateUrl: '../views/homepage/header.html',
                 controller: 'HeaderCtrl',
                 controllerAs: 'header'
             })
@@ -40,7 +40,7 @@ angular
                 controllerAs: 'xcy/xcy1'
             })
             .when('/footer', {
-                templateUrl: 'views/footer.html',
+                templateUrl: '../views/homepage/footer.html',
                 controller: 'FooterCtrl',
                 controllerAs: 'footer'
             })
