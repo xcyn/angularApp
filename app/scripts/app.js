@@ -29,8 +29,8 @@ angular
                 controller: 'AboutCtrl',
                 controllerAs: 'about'
             })
-            .when('/header', {
-                templateUrl: '../views/homepage/header.html',
+            .when('/homepage/header', {
+                templateUrl: 'views/homepage/header.html',
                 controller: 'HeaderCtrl',
                 controllerAs: 'header'
             })
@@ -39,8 +39,8 @@ angular
                 controller: 'XcyXcy1Ctrl',
                 controllerAs: 'xcy/xcy1'
             })
-            .when('/footer', {
-                templateUrl: '../views/homepage/footer.html',
+            .when('/homepage/footer', {
+                templateUrl: 'views/homepage/footer.html',
                 controller: 'FooterCtrl',
                 controllerAs: 'footer'
             })
@@ -48,6 +48,26 @@ angular
               templateUrl: 'views/aboutlist.html',
               controller: 'AboutlistCtrl',
               controllerAs: 'aboutList'
+            })
+            .when('/channel/columnl', {
+              templateUrl: 'views/channel/column1.html',
+              controller: 'ChannelColumn1Ctrl',
+              controllerAs: 'channel/column1'
+            })
+            .when('/openUp/Enterprise', {
+              templateUrl: 'views/openup/enterprise.html',
+              controller: 'OpenupEnterpriseCtrl',
+              controllerAs: 'openUp/Enterprise'
+            })
+            .when('/openUp/serveNo', {
+              templateUrl: 'views/openup/serveno.html',
+              controller: 'OpenupServenoCtrl',
+              controllerAs: 'openUp/serveNo'
+            })
+            .when('/openUP/subscribe', {
+              templateUrl: 'views/openup/subscribe.html',
+              controller: 'OpenupSubscribeCtrl',
+              controllerAs: 'openUP/subscribe'
             })
             .otherwise({
                 redirectTo: '/'
