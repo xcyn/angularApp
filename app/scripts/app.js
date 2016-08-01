@@ -69,6 +69,26 @@ angular
               controller: 'OpenupSubscribeCtrl',
               controllerAs: 'openUP/subscribe'
             })
+            .when('/manage/manageSubscribe', {
+              templateUrl: 'views/manage/managesubscribe.html',
+              controller: 'ManageManagesubscribeCtrl',
+              controllerAs: 'manage/manageSubscribe'
+            })
+            .when('/manage/manageServe', {
+              templateUrl: 'views/manage/manageserve.html',
+              controller: 'ManageManageserveCtrl',
+              controllerAs: 'manage/manageServe'
+            })
+            .when('/manage/manageColumn', {
+              templateUrl: 'views/manage/managecolumn.html',
+              controller: 'ManageManagecolumnCtrl',
+              controllerAs: 'manage/manageColumn'
+            })
+            .when('/newBuild/topic', {
+              templateUrl: 'views/newbuild/topic.html',
+              controller: 'NewbuildTopicCtrl',
+              controllerAs: 'newBuild/topic'
+            })
             .otherwise({
                 redirectTo: '/'
             });

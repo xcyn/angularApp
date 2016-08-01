@@ -14,22 +14,22 @@
 <!--封面介绍-->
 <div class="xcy-xxPagecontent">
   <div class="xcy-xxW clearfix">
-    <div class="xcy-xxPagecontent-introduce clearfix">
+    <div class="xcy-xxPagecontent-introduce clearfix" ng-click="goto('#/manage/manageServe')">
       <div class="xcy-xxPagecontent-introduce-L">
         <img src="" alt=""/>
       </div>
       <div class="xcy-xxPagecontent-introduce-r">
-        <p>北京驴妈妈</p>
+        <h3>管理服务号</h3>
 
         <p>服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介</p>
       </div>
     </div>
-    <div class="xcy-xxPagecontent-introduce clearfix">
+    <div class="xcy-xxPagecontent-introduce clearfix" ng-click="goto('#/manage/manageColumn')">
       <div class="xcy-xxPagecontent-introduce-L">
         <img src="" alt=""/>
       </div>
       <div class="xcy-xxPagecontent-introduce-r">
-        <p>北京驴妈妈</p>
+        <h3>管理我的频道</h3>
 
         <p>服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介服务号简介</p>
       </div>
@@ -77,11 +77,11 @@
       <div class="icon iconfont">&#xe61e;</div>
       <div class="content">发现</div>
     </div>
-    <div>
+    <div ng-click="goto('#/newBuild/topic')">
       <div class="icon iconfont">&#xe60b;</div>
       <div class="content">好友</div>
     </div>
-    <div>
+    <div ng-click="goto('#/manage/manageSubscribe')">
       <div class="icon iconfont">&#xe602;</div>
       <div class="content">我</div>
     </div>

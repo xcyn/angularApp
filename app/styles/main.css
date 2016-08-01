@@ -31,13 +31,9 @@ td {
 }
 body {
   background: #fff;
-  color: #555;
-  font-size: 14px;
-}
-td,
-th,
-caption {
-  font-size: 14px;
+  font-size: 0.36rem;
+  color: #959595;
+  font-family: Adobe, Caslon, Pro, Italic;
 }
 h1,
 h2,
@@ -79,7 +75,7 @@ input,
 textarea,
 select,
 button {
-  font: 14px Verdana, Helvetica, Arial, sans-serif;
+  font: 0.24rem Verdana, Helvetica, Arial, sans-serif;
 }
 table {
   border-collapse: collapse;
@@ -139,7 +135,7 @@ html body .xcy-xxPageHeader > .xcy-xxW > ul > li > a {
   padding: 0.1rem 0.25rem 0.1rem 0.25rem;
   text-align: center;
   color: #fff;
-  font-size: 0.3rem;
+  font-size: 0.36rem;
 }
 html body .xcy-xxPageHeader > .xcy-xxW > ul > li .center {
   margin: 0 0.3rem;
@@ -172,14 +168,15 @@ html body .xcy-xxPagecontent .xcy-xxW .xcy-xxPagecontent-introduce .xcy-xxPageco
   height: 1rem;
   padding-left: 0.1rem;
   float: right;
-  font-size: 0.25rem;
+  font-size: 0.24rem;
 }
-html body .xcy-xxPagecontent .xcy-xxW .xcy-xxPagecontent-introduce .xcy-xxPagecontent-introduce-r p:first-child {
+html body .xcy-xxPagecontent .xcy-xxW .xcy-xxPagecontent-introduce .xcy-xxPagecontent-introduce-r h3 {
   font-size: 0.3rem;
   padding-top: 0.2rem;
   font-weight: 700;
+  color: #666;
 }
-html body .xcy-xxPagecontent .xcy-xxW .xcy-xxPagecontent-introduce .xcy-xxPagecontent-introduce-r p:nth-of-type(2) {
+html body .xcy-xxPagecontent .xcy-xxW .xcy-xxPagecontent-introduce .xcy-xxPagecontent-introduce-r p {
   width: 6rem;
   overflow: hidden;
   white-space: nowrap;
@@ -209,6 +206,7 @@ html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-
 html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-introduce-r span:first-child {
   font-size: 0.3rem;
   font-weight: 700;
+  color: #666;
 }
 html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-introduce-r span:last-child {
   font-size: 0.5rem;
@@ -237,10 +235,11 @@ html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-
 }
 html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-introduce-r-bottom .xcy-xxPageMyDYH-introduce-r-bottom-introduce .xcy-xxPageMyDYH-introduce-r-bottom-introduce-r > p:first-child {
   font-weight: 700;
+  color: #666;
 }
 html body .xcy-xxPageMyDYH .xcy-xxW .xcy-xxPageMyDYH-introduce .xcy-xxPageMyDYH-introduce-r-bottom .xcy-xxPageMyDYH-introduce-r-bottom-introduce .xcy-xxPageMyDYH-introduce-r-bottom-introduce-r p:nth-of-type(2) {
   width: 100%;
-  font-size: 0.3rem;
+  font-size: 0.24rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -250,6 +249,7 @@ html body .xcy-xxPageFooter {
   height: 1rem;
   position: fixed;
   bottom: 0;
+  color: #000;
 }
 html body .xcy-xxPageFooter > .xcy-xxW > div {
   width: 0.7rem;
@@ -309,7 +309,7 @@ html body .xcy-xxColumn1-content .xcy-xxW .xcy-xxColumn1-content-top {
 }
 html body .xcy-xxColumn1-content .xcy-xxW .xcy-xxColumn1-content-top div {
   width: 1.5rem;
-  font-size: 0.3rem;
+  font-size: 0.24rem;
   position: absolute;
 }
 html body .xcy-xxColumn1-content .xcy-xxW .xcy-xxColumn1-content-top .xcy-xxColumn1-content-topTo1 {
@@ -322,7 +322,7 @@ html body .xcy-xxColumn1-content .xcy-xxW .xcy-xxColumn1-content-top .xcy-xxColu
 }
 html body .xcy-xxColumn1-content .xcy-xxW .xcy-xxColumn1-content-top .xcy-xxColumn1-content-topTo3 {
   bottom: 0;
-  right: 0;
+  right: -0.15rem;
 }
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top {
   margin-top: 0.4rem;
@@ -341,7 +341,7 @@ html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xcy-
 }
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xcy-xxColumn1-columnName-top-center {
   font-size: 0.3rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1rem;
   padding-left: 0.5rem;
 }
@@ -357,7 +357,7 @@ html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xcy-
   margin-top: 0.25rem;
 }
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-center {
-  font-size: 0.3rem;
+  font-size: 0.2rem;
   padding: 0.25rem 0;
   background-color: #fff;
 }
@@ -373,9 +373,10 @@ html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-center sp
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom {
   font-size: 0.3rem;
   background-color: #fff;
+  font-weight: 700;
 }
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom span {
-  margin-right: 0.6rem;
+  margin-right: 0.4rem;
 }
 html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom span:last-child {
   margin-right: 0;
@@ -384,7 +385,7 @@ html body .xcy-xxColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom sp
 html body .xcy-xxColumn1-columnName-bottom-toShow span {
   background-color: #fff;
   float: left;
-  font-size: 0.3rem;
+  font-size: 0.2rem;
   padding: 0.2rem;
   margin: 0.3rem 0;
 }
@@ -395,27 +396,9 @@ html body .xcy-notLive .xcy-xxW .title span {
   font-size: 0.3rem;
   padding: 0.1rem 0.5rem 0.1rem 0.1rem;
   text-align: center;
-  background-color: #ee7615;
+  background: url("../images/columnBgc.png") no-repeat;
+  background-size: contain;
   color: #fff;
-}
-html body .xcy-notLive .xcy-xxW .title i {
-  width: 0.8rem;
-  height: 0.8rem;
-  position: absolute;
-  top: -0.15rem;
-  left: 1.4rem;
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  background-color: #f6f6f6;
-}
-html body .xcy-notLive .xcy-xxW .title s {
-  border-top: 0.05rem solid #ee7615;
-  border-right: 0.05rem solid #ee7615;
-  border-bottom: 0.05rem solid transparent;
-  border-left: 0.05rem solid transparent;
-  position: absolute;
-  bottom: -0.12rem;
-  left: -0.015rem;
 }
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top {
   margin-top: 0.4rem;
@@ -434,7 +417,7 @@ html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xc
 }
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xcy-xxColumn1-columnName-top-center {
   font-size: 0.3rem;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 1rem;
   padding-left: 0.5rem;
 }
@@ -450,7 +433,7 @@ html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-top .xc
   margin-top: 0.25rem;
 }
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-center {
-  font-size: 0.3rem;
+  font-size: 0.2rem;
   padding: 0.25rem 0;
   background-color: #fff;
 }
@@ -466,9 +449,10 @@ html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-center 
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom {
   font-size: 0.3rem;
   background-color: #fff;
+  font-weight: 700;
 }
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom span {
-  margin-right: 0.6rem;
+  margin-right: 0.4rem;
 }
 html body .xcy-xxNoColumn1-columnName .xcy-xxW .xcy-xxColumn1-columnName-bottom span:last-child {
   margin-right: 0;
@@ -510,7 +494,7 @@ html body .xcy-xxComminHerder .xcy-xxW span {
   font-size: 0.5rem;
 }
 html body .xcy-xxComminHerder .xcy-xxW .title {
-  font-size: 0.35rem;
+  font-size: 0.36rem;
   padding-left: 1.8rem;
 }
 html body .xcy-xxopenUpEnterPrise .xcy-xxW .xcy-xxopenUpEnterPrise-top {
@@ -555,10 +539,14 @@ html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .xcy-xxopenUpServeno-cov
   display: block;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .nameAndServeno {
+  padding: 0.15rem;
   background-color: #fff;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .nameAndServeno label {
   margin: 0;
+}
+html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .nameAndServeno label span {
+  font-size: 0.24rem;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .nameAndServeno label input {
   outline: none;
@@ -571,7 +559,8 @@ html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .nameAndServeno label:fi
   text-decoration: none;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .introductionServe h3 {
-  padding: 0.2rem 0;
+  font-size: 0.3rem;
+  padding: 0.15rem;
   font-weight: 700;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .introductionServe textarea {
@@ -581,6 +570,7 @@ html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-top .introductionServe texta
   height: 1.7rem;
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-bottom {
+  font-size: 0.3rem;
   padding: 0.2rem 0;
   font-weight: 700;
 }
@@ -650,7 +640,7 @@ html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-bottom > .xcy-xxW .submit in
 }
 html body .xcy-xxopenUpServeno .xcy-xxopenUpServeno-bottom > .xcy-xxW .submit span {
   color: #666;
-  font-size: 0.3rem;
+  font-size: 0.24rem;
 }
 html body .xcy-xxopenUpSubscribe {
   background-color: #f6f6f6;
@@ -666,10 +656,14 @@ html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .xcy-xxopenUp
   display: block;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .nameAndServeno {
+  padding: 0.15rem;
   background-color: #fff;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .nameAndServeno label {
   margin: 0;
+}
+html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .nameAndServeno label span {
+  font-size: 0.24rem;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .nameAndServeno label input {
   outline: none;
@@ -682,7 +676,8 @@ html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .nameAndServe
   text-decoration: none;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .introductionServe h3 {
-  padding: 0.2rem 0;
+  font-size: 0.3rem;
+  padding: 0.15rem;
   font-weight: 700;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .introductionServe textarea {
@@ -692,11 +687,16 @@ html body .xcy-xxopenUpSubscribe .xcy-xxW .xcy-xxopenUpServeno-top .introduction
   height: 1.7rem;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW > .xcy-xxopenUpServeno-bottom-Applicant {
+  font-size: 0.24rem;
   padding-top: 0.2rem;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW > .xcy-xxopenUpServeno-bottom-Applicant > .xcy-xxopenUpServeno-bottom-open-left {
   height: 1.35rem;
   padding-right: 0.5rem;
+}
+html body .xcy-xxopenUpSubscribe .xcy-xxW > .xcy-xxopenUpServeno-bottom-Applicant > .xcy-xxopenUpServeno-bottom-open-left > p {
+  margin-top: 0.2rem;
+  font-weight: 700;
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW > .xcy-xxopenUpServeno-bottom-Applicant > .xcy-xxopenUpServeno-bottom-open-center {
   width: 1.35rem;
@@ -732,7 +732,597 @@ html body .xcy-xxopenUpSubscribe .xcy-xxW .submit input[type=submit] {
 }
 html body .xcy-xxopenUpSubscribe .xcy-xxW .submit span {
   color: #666;
+  font-size: 0.2rem;
+}
+html body .xcy-xxManaSubscribeHeader {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  color: #fff;
+  background-color: #ee7615;
+}
+html body .xcy-xxManaSubscribeHeader .xcy-xxW span {
+  float: left;
+  font-size: 0.5rem;
+}
+html body .xcy-xxManaSubscribeHeader .xcy-xxW .title {
+  font-size: 0.36rem;
+  padding-left: 2.25rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft > h3 {
+  width: 1.35rem;
+  padding: 0.1rem 0;
+  padding-left: 0.2rem;
+  margin: 0.1rem 0 0 0;
   font-size: 0.3rem;
+  color: #fff;
+  background: url('../images/columnBgc.png') no-repeat;
+  background-size: contain;
+  -wibkit-background-size: contain;
+  -moz-background-size: contain;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-top span {
+  float: right;
+  width: 0.3rem;
+  text-align: center;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border: 1px solid #666;
+  border-radius: 50%;
+  font-size: 0.05rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-center .draft-content-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  float: left;
+  margin-top: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-center .draft-content-center-left img {
+  width: 100%;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-center .draft-content-center-right {
+  width: 5.5rem;
+  font-size: 0.24rem;
+  float: right;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-bottom {
+  padding: 0.15rem;
+  font-size: 0.24rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-bottom .draft-content-bottom-setCrowdfunding {
+  background-color: #ee7615;
+  height: 0.4rem;
+  line-height: 0.3rem;
+  padding: 0.04rem 0.2rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .draft .draft-content .draft-content-bottom .draft-content-bottom-EDIT {
+  border: 1px solid #ee7615;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  border-radius: 0.2rem;
+  padding: 0rem 0.2rem;
+  color: #ee7615;
+  margin-right: 0.18rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding > h3 {
+  width: 1.35rem;
+  padding: 0.1rem 0;
+  padding-left: 0.2rem;
+  margin: 0.1rem 0 0 0;
+  font-size: 0.3rem;
+  color: #fff;
+  background: url('../images/columnBgc.png') no-repeat;
+  background-size: contain;
+  -wibkit-background-size: contain;
+  -moz-background-size: contain;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-top span {
+  float: right;
+  width: 0.3rem;
+  text-align: center;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.05rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-center .draft-content-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  float: left;
+  margin-top: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-center .draft-content-center-left img {
+  width: 100%;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-center .draft-content-center-right {
+  width: 5.5rem;
+  font-size: 0.24rem;
+  float: right;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-bottom {
+  padding: 0.15rem;
+  font-size: 0.24rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-bottom .draft-content-bottom-setCrowdfunding {
+  background-color: #ee7615;
+  height: 0.4rem;
+  line-height: 0.3rem;
+  padding: 0.04rem 0.2rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Crowdfunding .draft-content .draft-content-bottom .draft-content-bottom-EDIT {
+  height: 0.4rem;
+  line-height: 0.45rem;
+  border-radius: 0.2rem;
+  padding: 0rem 0.2rem;
+  color: #959595;
+  margin-right: 0.18rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived > h3 {
+  width: 1.35rem;
+  padding: 0.1rem 0;
+  padding-left: 0.2rem;
+  margin: 0.1rem 0 0 0;
+  font-size: 0.3rem;
+  color: #fff;
+  background: url('../images/columnBgc.png') no-repeat;
+  background-size: contain;
+  -wibkit-background-size: contain;
+  -moz-background-size: contain;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived .draft-content {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived .draft-content .draft-content-top span {
+  float: right;
+  width: 0.3rem;
+  text-align: center;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.05rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived .draft-content .draft-content-center .draft-content-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  float: left;
+  margin-top: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived .draft-content .draft-content-center .draft-content-center-left img {
+  width: 100%;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .orderReceived .draft-content .draft-content-center .draft-content-center-right {
+  width: 5.5rem;
+  font-size: 0.24rem;
+  float: right;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living > h3 {
+  width: 1.35rem;
+  padding: 0.1rem 0;
+  padding-left: 0.2rem;
+  margin: 0.1rem 0 0 0;
+  font-size: 0.3rem;
+  color: #fff;
+  background: url('../images/columnBgc.png') no-repeat;
+  background-size: contain;
+  -wibkit-background-size: contain;
+  -moz-background-size: contain;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living .draft-content {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living .draft-content .draft-content-top span {
+  float: right;
+  width: 0.3rem;
+  text-align: center;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.05rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living .draft-content .draft-content-center .draft-content-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  float: left;
+  margin-top: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living .draft-content .draft-content-center .draft-content-center-left img {
+  width: 100%;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .Living .draft-content .draft-content-center .draft-content-center-right {
+  width: 5.5rem;
+  font-size: 0.24rem;
+  float: right;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended {
+  padding-bottom: 2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended > h3 {
+  width: 1.35rem;
+  padding: 0.1rem 0;
+  padding-left: 0.2rem;
+  margin: 0.1rem 0 0 0;
+  font-size: 0.3rem;
+  color: #fff;
+  background: url('../images/columnBgc.png') no-repeat;
+  background-size: contain;
+  -wibkit-background-size: contain;
+  -moz-background-size: contain;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content {
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 0.2rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .draft-content-top span {
+  float: right;
+  width: 0.3rem;
+  text-align: center;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  border-radius: 50%;
+  font-size: 0.05rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .draft-content-center .draft-content-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid black;
+  float: left;
+  margin-top: 0.1rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .draft-content-center .draft-content-center-left img {
+  width: 100%;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .draft-content-center .draft-content-center-right {
+  width: 5.5rem;
+  font-size: 0.24rem;
+  float: right;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .xcy-xxColumn1-columnName-center {
+  font-size: 0.2rem;
+  padding: 0.25rem 0;
+  background-color: #fff;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .xcy-xxColumn1-columnName-center span {
+  padding-right: 0.8rem;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .xcy-xxColumn1-columnName-center span:nth-of-type(3) i {
+  color: #ee7615;
+}
+html body .xcy-xxManaSubscribeContent > .xcy-xxW > .ended .draft-content .xcy-xxColumn1-columnName-center span:nth-of-type(4) {
+  padding: 0;
+}
+html body .xcy-xxManaSubscribeFooter .xcy-xxPageFooter {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  color: #000;
+}
+html body .xcy-xxManaSubscribeFooter .xcy-xxPageFooter > .xcy-xxW {
+  padding: 0 0.1rem;
+}
+html body .xcy-xxManaSubscribeFooter .xcy-xxPageFooter > .xcy-xxW > div {
+  width: 25%;
+  float: left;
+  text-align: center;
+  margin-left: 0;
+}
+html body .xcy-xxManaSubscribeFooter .xcy-xxPageFooter > .xcy-xxW > div .content {
+  text-align: center;
+  font-size: 0.25rem;
+}
+html body .xcy-xxManaSubscribeFooter .xcy-xxPageFooter > .xcy-xxW > div:hover > div {
+  color: #0068b7;
+}
+html body .xxmanageServe-content {
+  background-color: #fff;
+  padding: 0.15rem;
+  margin-top: 0.15rem;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-top span {
+  width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  font-size: 0.2rem;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  float: right;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000;
+  position: relative;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-left img {
+  width: 100%;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-right {
+  padding: 0 0.15rem;
+  line-height: 1rem;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-right span {
+  font-size: 0.3rem;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom {
+  font-size: 0.2rem;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span {
+  border-radius: 0.1rem;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span:first-child {
+  background-color: #ee7615;
+  color: #fff;
+  padding: 0.08rem 0.3rem;
+}
+html body .xxmanageServe-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span:last-child {
+  font-size: 0.24rem;
+  border: 1px solid #ee7615;
+  color: #ee7615;
+  padding: 0 0.3rem;
+  margin-right: 0.15rem;
+}
+html body .xxmanageServe-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  color: #000;
+  padding-bottom: 0.2rem;
+}
+html body .xxmanageServe-footer .xcy-xxW div {
+  text-align: center;
+  width: 33.3%;
+}
+html body .xxmanageServe-footer .xcy-xxW div div {
+  margin: 0 auto;
+}
+html body .xxmanageServe-footer .xcy-xxW div .navLeftBottom {
+  width: 100%;
+  font-size: 0.2rem;
+}
+html body .xcy-managecolumnHeader {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  font-size: 0.36rem;
+  color: #fff;
+  background-color: #ee7615;
+}
+html body .xcy-managecolumnHeader .xcy-xxW span {
+  float: left;
+}
+html body .xcy-managecolumnHeader .xcy-xxW div {
+  float: left;
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: 0.2rem;
+  border: 1px solid #000;
+  margin-left: 2.2rem;
+}
+html body .xcy-managecolumnHeader .xcy-xxW div img {
+  width: 100%;
+}
+html body .xcy-managecolumnHeader .xcy-xxW span:first-child {
+  font-size: 0.5rem;
+}
+html body .xcy-managecolumnHeader .xcy-xxW span:last-child {
+  padding-left: 0.1rem;
+}
+html body .xcy-managecolumn-content {
+  background-color: #fff;
+  padding: 0.15rem;
+  margin-top: 0.15rem;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-top span {
+  width: 0.3rem;
+  height: 0.3rem;
+  line-height: 0.3rem;
+  text-align: center;
+  font-size: 0.2rem;
+  border: 1px solid #666666;
+  border-radius: 50%;
+  float: right;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-left {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000;
+  position: relative;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-left img {
+  width: 100%;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-right {
+  padding: 0 0.15rem;
+  line-height: 1rem;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-center .xxmanageServe-main-center-right span {
+  font-size: 0.3rem;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom {
+  font-size: 0.2rem;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span {
+  border-radius: 0.1rem;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span:first-child {
+  font-size: 0.24rem;
+  border: 1px solid #ee7615;
+  color: #ee7615;
+  padding: 0 0.3rem;
+  margin-right: 0.15rem;
+}
+html body .xcy-managecolumn-content .xcy-xxW .xxmanageServe-main .xxmanageServe-main-bottom span:last-child {
+  background-color: #ee7615;
+  color: #fff;
+  padding: 0.08rem 0.3rem;
+  margin-right: 0.15rem;
+}
+html body .xcy-newBuildTopic-header {
+  height: 0.9rem;
+  line-height: 0.9rem;
+  background-color: #ee7615;
+  color: #fff;
+  font-size: 0.36rem;
+}
+html body .xcy-newBuildTopic-header > .xcy-xxW > .title {
+  overflow: hidden;
+  width: 50%;
+  letter-spacing: 0.05rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+html body .xcy-newBuildTopic-header > .xcy-xxW > span:first-child {
+  font-size: 0.7rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-nav {
+  border-bottom: 1px solid #ee7615;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-nav .xcy-xxW ul {
+  height: 0.6rem;
+  line-height: 0.6rem;
+  text-align: center;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-nav .xcy-xxW ul > li {
+  width: 50%;
+  font-size: 0.3rem;
+  position: relative;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-nav .xcy-xxW ul > li i {
+  width: 0.2rem;
+  height: 0.2rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -0.1rem;
+  left: 50%;
+  margin-left: -0.1rem;
+  background-color: #ee7615;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover {
+  margin-top: 0.28rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTopic-container {
+  height: 2.94rem;
+  border-radius: 0.2rem;
+  border: 1px solid #000;
+  background: url('../images/yeoman.png') no-repeat center;
+  background-size: contain;
+  position: relative;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTopic-container > .uploadCover {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #ee7615;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -0.75rem;
+  margin-left: -0.75rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTopic-container > .uploadCover > p {
+  text-align: center;
+  color: #fff;
+  font-size: 0.3rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTopic-container > .uploadCover p:first-child {
+  font-size: 0.6rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTopic-container > .talkId {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1rem;
+  color: #fff;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildDescribe {
+  font-size: 0.24rem;
+  margin-top: 0.95rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildDescribe .content {
+  height: 1.8rem;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  margin: 0.1rem 0;
+  width: 100%;
+  outline: none;
+  padding: 0.2rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildDescribe .example p:first-child {
+  width: 0.8rem;
+  float: left;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildDescribe .example p:last-child {
+  overflow: hidden;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTalk {
+  margin-top: 0.3rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTalk .content {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTalk .example {
+  font-size: 0.24rem;
+  font-weight: 700;
+}
+html body .xcy-newBuildTopic-content .xcy-newBuildTopic-cover .xcy-xxW > .xcy-newBuildTalk .example span {
+  font-weight: normal;
+}
+html body .xcy-newBuildTopic-footer {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  position: fixed;
+  bottom: 0;
+  color: #ee7615;
+}
+html body .xcy-newBuildTopic-footer > .xcy-xxW div {
+  float: right;
+  padding-bottom: 0.3rem;
+  width: 100%;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+html body .xcy-newBuildTopic-footer > .xcy-xxW div i {
+  font-size: 0.7rem;
+}
+html body .xcy-newBuildTopic-footer > .xcy-xxW div span {
+  left: 2rem;
 }
 html body .homePage-header {
   width: 100%;

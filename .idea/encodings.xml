@@ -2,23 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Gruntfile.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/otherLib/fonts/iconfont.css" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/about.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/aboutlist.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/main.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/controllers/xcy/xcy1.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/directives/footer.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/scripts/services/tabchange.js" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/styles/main.less" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/about.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/aboutlist.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/channel/column1.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/homepage/footer.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/homepage/header.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/main.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/openup/enterprise.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/openup/serveno.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/openup/subscribe.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/views/xcy/xcy1.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/manage/managecolumn.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/manage/manageserve.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/manage/managesubscribe.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/views/newbuild/topic.html" charset="UTF-8" />
   </component>
 </project>

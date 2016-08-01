@@ -8,6 +8,17 @@
 @grey-background-color: #f9f9f9;
 @line-color: #ddd;
 @xx-commom-color: #ee7615;
+@xx-commom-embellishmentColor: #ffe402;
+@xx-commom-sub1Color: #0068b7;
+@xx-commom-sub2Color: #959595;
+@xx-commom-partitionColor: #eee;
+@xx-commom-black: #000;
+@xx-commom-bgcColor: #f6f6f6;
+@xx-commom-navFont: 0.36rem;
+@xx-commom-titFont: 0.3rem;
+@xx-commom-contentFont: 0.24rem;
+@xx-commom-smallFont: 0.2rem;
+@xx-bodyBgc: #f6f6f6;
 /* css reset */
 body, div, dl, dt, dd, ul, ol, li, span, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, p, blockquote, th, td {
   margin: 0;
@@ -16,12 +27,10 @@ body, div, dl, dt, dd, ul, ol, li, span, h1, h2, h3, h4, h5, h6, pre, code, form
 
 body {
   background: #fff;
-  color: #555;
-  font-size: 14px;
-}
+  font-size: @xx-commom-navFont;
+  color: @xx-commom-sub2Color;
+  font-family: Adobe, Caslon, Pro, Italic;
 
-td, th, caption {
-  font-size: 14px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,7 +65,7 @@ ol, ul, li {
 }
 
 input, textarea, select, button {
-  font: 14px Verdana, Helvetica, Arial, sans-serif;
+  font: 0.24rem Verdana, Helvetica, Arial, sans-serif;
 }
 
 table {
@@ -100,13 +109,14 @@ html {
   body {
     width: 100%;
     height: 100%;
-    background-color: #f6f6f6;
+    background-color: @xx-bodyBgc;
     //项目正式开始
     //主页开始
     //头部开始
     .xcy-xxPageHeader {
       width: 100%;
       background-color: @xx-commom-color;
+
       position: fixed;
       top: 0;
       > .xcy-xxW {
@@ -122,7 +132,7 @@ html {
               padding: 0.1rem 0.25rem 0.1rem 0.25rem;
               text-align: center;
               color: #fff;
-              font-size: 0.3rem;
+              font-size: @xx-commom-navFont;
             }
             .center {
               margin: 0 0.3rem;
@@ -159,13 +169,17 @@ html {
             height: 1rem;
             padding-left: 0.1rem;
             float: right;
-            font-size: 0.25rem;
-            p:first-child {
+            font-size: @xx-commom-contentFont;
+            p {
+
+            }
+            h3 {
               font-size: 0.3rem;
               padding-top: 0.2rem;
               font-weight: 700;
+              color: #666;
             }
-            p:nth-of-type(2) {
+            p {
               width: 6rem;
               overflow: hidden;
               white-space: nowrap;
@@ -203,6 +217,7 @@ html {
             span:first-child {
               font-size: 0.3rem;
               font-weight: 700;
+              color: #666;
             }
             span:last-child {
               font-size: 0.5rem;
@@ -233,10 +248,11 @@ html {
                 }
                 > p:first-child {
                   font-weight: 700;
+                  color: #666;
                 }
                 p:nth-of-type(2) {
                   width: 100%;
-                  font-size: 0.3rem;
+                  font-size: @xx-commom-contentFont;
                   overflow: hidden;
                   white-space: nowrap;
                   text-overflow: ellipsis;
@@ -254,6 +270,7 @@ html {
       height: 1rem;
       position: fixed;
       bottom: 0;
+      color: #000;
       > .xcy-xxW {
         > div {
           width: 0.7rem;
@@ -323,7 +340,7 @@ html {
           color: #fff;
           div {
             width: 1.5rem;
-            font-size: 0.3rem;
+            font-size: @xx-commom-contentFont;
             position: absolute;
           }
           .xcy-xxColumn1-content-topTo1 {
@@ -336,7 +353,7 @@ html {
           }
           .xcy-xxColumn1-content-topTo3 {
             bottom: 0;
-            right: 0;
+            right: -0.15rem;
           }
         }
       }
@@ -362,8 +379,8 @@ html {
             }
           }
           .xcy-xxColumn1-columnName-top-center {
-            font-size: 0.3rem;
-            font-weight: 400;
+            font-size: @xx-commom-titFont;
+            font-weight: 700;
             line-height: 1rem;
             padding-left: 0.5rem;
           }
@@ -381,7 +398,7 @@ html {
         }
         //栏目名称center
         .xcy-xxColumn1-columnName-center {
-          font-size: 0.3rem;
+          font-size: @xx-commom-smallFont;
           padding: 0.25rem 0;
           background-color: #fff;
           span {
@@ -398,10 +415,13 @@ html {
         }
         //栏目名称bottom
         .xcy-xxColumn1-columnName-bottom {
-          font-size: 0.3rem;
+          font-size: @xx-commom-titFont;
           background-color: #fff;
+          font-weight: 700;
           span {
-            margin-right: 0.6rem;
+            margin-right: 0.4rem;
+          }
+          span:nth-of-type(3) {
           }
           span:last-child {
             margin-right: 0;
@@ -417,7 +437,7 @@ html {
       span {
         background-color: #fff;
         float: left;
-        font-size: 0.3rem;
+        font-size: @xx-commom-smallFont;
         padding: 0.2rem;
         margin: 0.3rem 0;
       }
@@ -432,28 +452,11 @@ html {
             font-size: 0.3rem;
             padding: 0.1rem 0.5rem 0.1rem 0.1rem;
             text-align: center;
-            background-color: @xx-commom-color;
+            background: url("../images/columnBgc.png") no-repeat;
+            background-size: contain;
             color: #fff;
           }
-          i {
-            width: 0.8rem;
-            height: 0.8rem;
-            position: absolute;
-            top: -0.15rem;
-            left: 1.4rem;
-            -webkit-transform: rotate(45deg);
-            -moz-transform: rotate(45deg);
-            background-color: #f6f6f6;
-          }
-          s {
-            border-top: 0.05rem solid @xx-commom-color;
-            border-right: 0.05rem solid @xx-commom-color;
-            border-bottom: 0.05rem solid transparent;
-            border-left: 0.05rem solid transparent;
-            position: absolute;
-            bottom: -0.12rem;
-            left: -0.015rem;
-          }
+
         }
       }
     }
@@ -477,8 +480,8 @@ html {
             }
           }
           .xcy-xxColumn1-columnName-top-center {
-            font-size: 0.3rem;
-            font-weight: 400;
+            font-size: @xx-commom-titFont;
+            font-weight: 700;
             line-height: 1rem;
             padding-left: 0.5rem;
           }
@@ -496,7 +499,7 @@ html {
         }
         //栏目名称center
         .xcy-xxColumn1-columnName-center {
-          font-size: 0.3rem;
+          font-size: @xx-commom-smallFont;
           padding: 0.25rem 0;
           background-color: #fff;
           span {
@@ -513,10 +516,13 @@ html {
         }
         //栏目名称bottom
         .xcy-xxColumn1-columnName-bottom {
-          font-size: 0.3rem;
+          font-size: @xx-commom-titFont;
           background-color: #fff;
+          font-weight: 700;
           span {
-            margin-right: 0.6rem;
+            margin-right: 0.4rem;
+          }
+          span:nth-of-type(3) {
           }
           span:last-child {
             margin-right: 0;
@@ -567,7 +573,7 @@ html {
           font-size: 0.5rem;
         }
         .title {
-          font-size: 0.35rem;
+          font-size: @xx-commom-navFont;
           padding-left: 1.8rem;
         }
       }
@@ -625,9 +631,13 @@ html {
         }
         //我的服务号主体部分
         .nameAndServeno {
+          padding: 0.15rem;
           background-color: #fff;
           label {
             margin: 0;
+            span {
+              font-size: @xx-commom-contentFont;
+            }
             input {
               outline: none;
               border: none;
@@ -638,14 +648,15 @@ html {
           label:first-child {
             border-bottom: 1px solid #f6f6f6;
             text-decoration: none;
-
           }
         }
         //服务号简介
         .introductionServe {
           h3 {
-            padding: 0.2rem 0;
+            font-size: @xx-commom-titFont;
+            padding: 0.15rem;
             font-weight: 700;
+
           }
           textarea {
             resize: none;
@@ -658,6 +669,7 @@ html {
       }
       //非公用营业部分
       .xcy-xxopenUpServeno-bottom {
+        font-size: @xx-commom-titFont;
         padding: 0.2rem 0;
         font-weight: 700;
         > .xcy-xxW {
@@ -741,14 +753,14 @@ html {
             }
             span {
               color: #666;
-              font-size: 0.3rem;
+              font-size: @xx-commom-contentFont;
             }
           }
         }
       }
     }
 
-    //开通我的企业号
+    //开通我的订阅号
     .xcy-xxopenUpSubscribe {
       background-color: #f6f6f6;
       .xcy-xxW {
@@ -767,9 +779,13 @@ html {
           }
           //我的服务号主体部分
           .nameAndServeno {
+            padding: 0.15rem;
             background-color: #fff;
             label {
               margin: 0;
+              span {
+                font-size: @xx-commom-contentFont;
+              }
               input {
                 outline: none;
                 border: none;
@@ -780,14 +796,15 @@ html {
             label:first-child {
               border-bottom: 1px solid #f6f6f6;
               text-decoration: none;
-
             }
           }
           //服务号简介
           .introductionServe {
             h3 {
-              padding: 0.2rem 0;
+              font-size: @xx-commom-titFont;
+              padding: 0.15rem;
               font-weight: 700;
+
             }
             textarea {
               resize: none;
@@ -800,10 +817,15 @@ html {
         }
         //申请人省份证
         > .xcy-xxopenUpServeno-bottom-Applicant {
+          font-size: @xx-commom-contentFont;
           padding-top: 0.2rem;
           > .xcy-xxopenUpServeno-bottom-open-left {
             height: 1.35rem;
             padding-right: 0.5rem;
+            > p {
+              margin-top: 0.2rem;
+              font-weight: 700;
+            }
           }
           > .xcy-xxopenUpServeno-bottom-open-center {
             width: 1.35rem;
@@ -842,12 +864,711 @@ html {
           }
           span {
             color: #666;
-            font-size: 0.3rem;
+            font-size: @xx-commom-smallFont;
           }
         }
 
       }
     }
+
+    //管理我的订阅号
+    //头部开始
+    .xcy-xxManaSubscribeHeader {
+      height: 0.9rem;
+      line-height: 0.9rem;
+      color: #fff;
+      background-color: @xx-commom-color;
+      .xcy-xxW {
+        span {
+          float: left;
+          font-size: 0.5rem;
+        }
+        .title {
+          font-size: @xx-commom-navFont;
+          padding-left: 2.25rem;
+        }
+      }
+    }
+    //头部结束
+    //内容区块开始
+    .xcy-xxManaSubscribeContent {
+      > .xcy-xxW {
+        //草稿
+        > .draft {
+          > h3 {
+            width: 1.35rem;
+            padding: 0.1rem 0;
+            padding-left: 0.2rem;
+            margin: 0.1rem 0 0 0;
+            font-size: @xx-commom-titFont;
+            color: #fff;
+            background: url('../images/columnBgc.png') no-repeat;
+            background-size: contain;
+            -wibkit-background-size: contain;
+            -moz-background-size: contain;
+          }
+          .draft-content {
+            border-radius: 0.5rem;
+            background-color: #fff;
+            padding: 0.2rem;
+            .draft-content-top {
+              span {
+                float: right;
+                width: 0.3rem;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border: 1px solid #666;
+                border-radius: 50%;
+                font-size: 0.05rem;
+              }
+            }
+            .draft-content-center {
+              .draft-content-center-left {
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid black;
+                float: left;
+                margin-top: 0.1rem;
+                img {
+                  width: 100%;
+                }
+              }
+              .draft-content-center-right {
+                width: 5.5rem;
+                font-size: @xx-commom-contentFont;
+                float: right;
+              }
+            }
+            .draft-content-bottom {
+              padding: 0.15rem;
+              font-size: @xx-commom-contentFont;
+              .draft-content-bottom-setCrowdfunding {
+                background-color: @xx-commom-color;
+                height: 0.4rem;
+                line-height: 0.3rem;
+                padding: 0.04rem 0.2rem;
+                color: #fff;
+                border-radius: 0.1rem;
+              }
+              .draft-content-bottom-EDIT {
+                border: 1px solid @xx-commom-color;
+                height: 0.4rem;
+                line-height: 0.4rem;
+                border-radius: 0.2rem;
+                padding: 0rem 0.2rem;
+                color: @xx-commom-color;
+                margin-right: 0.18rem;
+              }
+            }
+          }
+        }
+        //众筹中
+        > .Crowdfunding {
+          > h3 {
+            width: 1.35rem;
+            padding: 0.1rem 0;
+            padding-left: 0.2rem;
+            margin: 0.1rem 0 0 0;
+            font-size: @xx-commom-titFont;
+            color: #fff;
+            background: url('../images/columnBgc.png') no-repeat;
+            background-size: contain;
+            -wibkit-background-size: contain;
+            -moz-background-size: contain;
+          }
+          .draft-content {
+            border-radius: 0.5rem;
+            background-color: #fff;
+            padding: 0.2rem;
+            .draft-content-top {
+              span {
+                float: right;
+                width: 0.3rem;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.05rem;
+              }
+            }
+            .draft-content-center {
+              .draft-content-center-left {
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid black;
+                float: left;
+                margin-top: 0.1rem;
+                img {
+                  width: 100%;
+                }
+              }
+              .draft-content-center-right {
+                width: 5.5rem;
+                font-size: @xx-commom-contentFont;
+                float: right;
+              }
+            }
+            .draft-content-bottom {
+              padding: 0.15rem;
+              font-size: @xx-commom-contentFont;
+              .draft-content-bottom-setCrowdfunding {
+                background-color: @xx-commom-color;
+                height: 0.4rem;
+                line-height: 0.3rem;
+                padding: 0.04rem 0.2rem;
+                color: #fff;
+                border-radius: 0.1rem;
+              }
+              .draft-content-bottom-EDIT {
+                height: 0.4rem;
+                line-height: 0.45rem;
+                border-radius: 0.2rem;
+                padding: 0rem 0.2rem;
+                color: @xx-commom-sub2Color;
+                margin-right: 0.18rem;
+              }
+            }
+          }
+        }
+        //已接单
+        > .orderReceived {
+          > h3 {
+            width: 1.35rem;
+            padding: 0.1rem 0;
+            padding-left: 0.2rem;
+            margin: 0.1rem 0 0 0;
+            font-size: @xx-commom-titFont;
+            color: #fff;
+            background: url('../images/columnBgc.png') no-repeat;
+            background-size: contain;
+            -wibkit-background-size: contain;
+            -moz-background-size: contain;
+          }
+          .draft-content {
+            border-radius: 0.5rem;
+            background-color: #fff;
+            padding: 0.2rem;
+            .draft-content-top {
+              span {
+                float: right;
+                width: 0.3rem;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.05rem;
+              }
+            }
+            .draft-content-center {
+              .draft-content-center-left {
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid black;
+                float: left;
+                margin-top: 0.1rem;
+                img {
+                  width: 100%;
+                }
+              }
+              .draft-content-center-right {
+                width: 5.5rem;
+                font-size: @xx-commom-contentFont;
+                float: right;
+              }
+            }
+          }
+        }
+        //直播中
+        > .Living {
+          > h3 {
+            width: 1.35rem;
+            padding: 0.1rem 0;
+            padding-left: 0.2rem;
+            margin: 0.1rem 0 0 0;
+            font-size: @xx-commom-titFont;
+            color: #fff;
+            background: url('../images/columnBgc.png') no-repeat;
+            background-size: contain;
+            -wibkit-background-size: contain;
+            -moz-background-size: contain;
+          }
+          .draft-content {
+            border-radius: 0.5rem;
+            background-color: #fff;
+            padding: 0.2rem;
+            .draft-content-top {
+              span {
+                float: right;
+                width: 0.3rem;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.05rem;
+              }
+            }
+            .draft-content-center {
+              .draft-content-center-left {
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid black;
+                float: left;
+                margin-top: 0.1rem;
+                img {
+                  width: 100%;
+                }
+              }
+              .draft-content-center-right {
+                width: 5.5rem;
+                font-size: @xx-commom-contentFont;
+                float: right;
+              }
+            }
+          }
+        }
+        //已结束
+        > .ended {
+          padding-bottom: 2rem;
+          > h3 {
+            width: 1.35rem;
+            padding: 0.1rem 0;
+            padding-left: 0.2rem;
+            margin: 0.1rem 0 0 0;
+            font-size: @xx-commom-titFont;
+            color: #fff;
+            background: url('../images/columnBgc.png') no-repeat;
+            background-size: contain;
+            -wibkit-background-size: contain;
+            -moz-background-size: contain;
+          }
+          .draft-content {
+            border-radius: 0.5rem;
+            background-color: #fff;
+            padding: 0.2rem;
+            .draft-content-top {
+              span {
+                float: right;
+                width: 0.3rem;
+                text-align: center;
+                height: 0.3rem;
+                line-height: 0.3rem;
+                border-radius: 50%;
+                font-size: 0.05rem;
+              }
+            }
+            .draft-content-center {
+              .draft-content-center-left {
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid black;
+                float: left;
+                margin-top: 0.1rem;
+                img {
+                  width: 100%;
+                }
+              }
+              .draft-content-center-right {
+                width: 5.5rem;
+                font-size: @xx-commom-contentFont;
+                float: right;
+              }
+            }
+            .xcy-xxColumn1-columnName-center {
+              font-size: @xx-commom-smallFont;
+              padding: 0.25rem 0;
+              background-color: #fff;
+              span {
+                padding-right: 0.8rem;
+              }
+              span:nth-of-type(3) {
+                i {
+                  color: @xx-commom-color;
+                }
+              }
+              span:nth-of-type(4) {
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    //内容区块结束
+    //公用底部开始
+    .xcy-xxManaSubscribeFooter {
+      .xcy-xxPageFooter {
+        width: 100%;
+        height: 1rem;
+        position: fixed;
+        bottom: 0;
+        color: #000;
+        > .xcy-xxW {
+          padding: 0 0.1rem;
+          > div {
+            width: 25%;
+            float: left;
+            text-align: center;
+            margin-left: 0;
+            .content {
+              text-align: center;
+              font-size: 0.25rem;
+            }
+          }
+          > div:hover > div {
+            color: @xx-commom-sub1Color;
+          }
+        }
+      }
+    }
+    //公用底部结束
+
+    //管理我的服务号
+    //内容区块部分
+    .xxmanageServe-content {
+      background-color: #fff;
+      padding: 0.15rem;
+      margin-top: 0.15rem;
+      .xcy-xxW {
+        .xxmanageServe-main {
+          .xxmanageServe-main-top {
+            span {
+              width: 0.3rem;
+              height: 0.3rem;
+              line-height: 0.3rem;
+              text-align: center;
+              font-size: 0.2rem;
+              border: 1px solid #666666;
+              border-radius: 50%;
+              float: right;
+            }
+          }
+          .xxmanageServe-main-center {
+            .xxmanageServe-main-center-left {
+              width: 1rem;
+              height: 1rem;
+              border: 1px solid #000;
+              position: relative;
+              img {
+                width: 100%;
+              }
+            }
+            .xxmanageServe-main-center-right {
+              padding: 0 0.15rem;
+              line-height: 1rem;
+              //超出显示省略号
+              overflow: hidden;
+              display: block;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              span {
+                font-size: @xx-commom-titFont;
+              }
+            }
+          }
+          .xxmanageServe-main-bottom {
+            font-size: @xx-commom-smallFont;
+            span {
+              border-radius: 0.1rem;
+            }
+            span:first-child {
+              background-color: @xx-commom-color;
+              color: #fff;
+              padding: 0.08rem 0.3rem;
+            }
+            span:last-child {
+              font-size: 0.24rem;
+              border: 1px solid @xx-commom-color;
+              color: @xx-commom-color;
+              padding: 0 0.3rem;
+              margin-right: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+    //公用底部开始
+    .xxmanageServe-footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1rem;
+      color: #000;
+      padding-bottom: 0.2rem;
+      .xcy-xxW {
+        div {
+          text-align: center;
+          width: 33.3%;
+          div {
+            margin: 0 auto;
+          }
+          .navLeftBottom {
+            width: 100%;
+            font-size: @xx-commom-smallFont;
+          }
+        }
+      }
+    }
+    //公用底部结束
+
+    //管理我的栏目
+    //头部
+    .xcy-managecolumnHeader {
+      height: 0.9rem;
+      line-height: 0.9rem;
+      font-size: @xx-commom-navFont;
+      color: #fff;
+      background-color: @xx-commom-color;
+      .xcy-xxW {
+        span {
+          float: left;
+        }
+        div {
+          float: left;
+          display: block;
+          width: 0.5rem;
+          height: 0.5rem;
+          margin-top: 0.2rem;
+          border: 1px solid #000;
+          margin-left: 2.2rem;
+          img {
+            width: 100%;
+          }
+        }
+        span:first-child {
+          font-size: 0.5rem;
+        }
+        span:last-child {
+          padding-left: 0.1rem;
+        }
+      }
+    }
+    //内容区块部分
+    .xcy-managecolumn-content {
+      background-color: #fff;
+      padding: 0.15rem;
+      margin-top: 0.15rem;
+      .xcy-xxW {
+        .xxmanageServe-main {
+          .xxmanageServe-main-top {
+            span {
+              width: 0.3rem;
+              height: 0.3rem;
+              line-height: 0.3rem;
+              text-align: center;
+              font-size: 0.2rem;
+              border: 1px solid #666666;
+              border-radius: 50%;
+              float: right;
+            }
+          }
+          .xxmanageServe-main-center {
+            .xxmanageServe-main-center-left {
+              width: 1rem;
+              height: 1rem;
+              border: 1px solid #000;
+              position: relative;
+              img {
+                width: 100%;
+              }
+            }
+            .xxmanageServe-main-center-right {
+              padding: 0 0.15rem;
+              line-height: 1rem;
+              //超出显示省略号
+              overflow: hidden;
+              display: block;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              span {
+                font-size: @xx-commom-titFont;
+              }
+            }
+          }
+          .xxmanageServe-main-bottom {
+            font-size: @xx-commom-smallFont;
+            span {
+              border-radius: 0.1rem;
+            }
+            span:first-child {
+              font-size: 0.24rem;
+              border: 1px solid @xx-commom-color;
+              color: @xx-commom-color;
+              padding: 0 0.3rem;
+              margin-right: 0.15rem;
+            }
+            span:last-child {
+              background-color: @xx-commom-color;
+              color: #fff;
+              padding: 0.08rem 0.3rem;
+              margin-right: 0.15rem;
+            }
+          }
+        }
+      }
+    }
+
+    //新建话题
+    //头部
+    .xcy-newBuildTopic-header {
+      height: 0.9rem;
+      line-height: 0.9rem;
+      background-color: @xx-commom-color;
+      color: #fff;
+      font-size: @xx-commom-navFont;
+      > .xcy-xxW {
+        > span {
+
+        }
+        > .title {
+          overflow: hidden;
+          width: 50%;
+          letter-spacing: 0.05rem;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+        }
+        > span:first-child {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    //新建内容部分
+    .xcy-newBuildTopic-content {
+      .xcy-newBuildTopic-nav {
+        border-bottom: 1px solid @xx-commom-color;
+        .xcy-xxW {
+          ul {
+            height: 0.6rem;
+            line-height: 0.6rem;
+            text-align: center;
+            > li {
+              width: 50%;
+              font-size: 0.3rem;
+              position: relative;
+              i {
+                width: 0.2rem;
+                height: 0.2rem;
+                border-radius: 50%;
+                position: absolute;
+                bottom: -0.1rem;
+                left: 50%;
+                margin-left: -0.1rem;
+                background-color: @xx-commom-color;
+              }
+            }
+          }
+        }
+      }
+      .xcy-newBuildTopic-cover {
+        margin-top: 0.28rem;
+        .xcy-xxW {
+          //封面
+          > .xcy-newBuildTopic-container {
+            height: 2.94rem;
+            border-radius: 0.2rem;
+            border: 1px solid #000;
+            background: url('../images/yeoman.png') no-repeat center;
+            background-size: contain;
+            position: relative;
+            > .uploadCover {
+              width: 1.5rem;
+              height: 1.5rem;
+              border-radius: 50%;
+              background-color: @xx-commom-color;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              margin-top: -0.75rem;
+              margin-left: -0.75rem;
+              > p {
+                text-align: center;
+                color: #fff;
+                font-size: @xx-commom-titFont;
+              }
+              p:first-child {
+                font-size: 0.6rem;
+              }
+            }
+            > .talkId {
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              margin-left: -1rem;
+              color: #fff;
+            }
+          }
+          //描述区
+          > .xcy-newBuildDescribe {
+            font-size: @xx-commom-contentFont;
+            margin-top: 0.95rem;
+            h3 {
+            }
+            .content {
+              height: 1.8rem;
+              border-radius: 0.2rem;
+              background-color: #fff;
+              margin: 0.1rem 0;
+              width: 100%;
+              outline: none;
+              padding: 0.2rem;
+            }
+            .example {
+              p:first-child {
+                width: 0.8rem;
+                float: left;
+              }
+              p:last-child {
+                overflow: hidden;
+              }
+            }
+          }
+          //话题区
+          > .xcy-newBuildTalk {
+            margin-top: 0.3rem;
+            .content {
+              width: 100%;
+              height: 3rem;
+              border-radius: 0.2rem;
+              padding: 0.2rem;
+            }
+            .example {
+              font-size: @xx-commom-contentFont;
+              font-weight: 700;
+              span {
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    //footer部分开始
+    .xcy-newBuildTopic-footer {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      position: fixed;
+      bottom: 0;
+      color: @xx-commom-color;
+      > .xcy-xxW {
+        div {
+          float: right;
+          padding-bottom: 0.3rem;
+          width: 100%;
+          height: 0.8rem;
+          line-height: 0.8rem;
+          i {
+            font-size: 0.7rem;
+          }
+          span {
+            left: 2rem;
+          }
+        }
+      }
+    }
+    //footer部分结束
     //项目正式结束
 
     //公用头部部分开始
